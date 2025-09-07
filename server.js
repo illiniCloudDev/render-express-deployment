@@ -11,17 +11,17 @@ const rappers = {
     '21 savage':{
         'age' : 29,
         'birthName':'Sheyaa Bin Abraham-Joseph',
-        'birthocatio': 'London, England'
+        'birthLocation': 'London, England'
     },
     'chance the rapper':{
         'age' : 29,
         'birthName':'Chancelor Bennett',
-        'birthocatio': 'Chicago, Illinois'
+        'birthLocation': 'Chicago, Illinois'
     },
     'unknown':{
         'age' : 0,
         'birthName':'unknown',
-        'birthocatio': 'unknown'
+        'birthLocation': 'unknown'
     },
 }
 
