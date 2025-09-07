@@ -25,7 +25,7 @@ const rappers = {
     },
 }
 
-app.get('/', (req,res)=>{
+app.get('/https://render-express-deployment-pqwl.onrender.com/', (req,res)=>{
     //__dirname is starting where ever server.js is located first
     res.sendFile(__dirname + '/index.html')
     
