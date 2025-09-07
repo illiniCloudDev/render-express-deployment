@@ -33,7 +33,7 @@ app.get('/https://render-express-deployment-pqwl.onrender.com/', (req,res)=>{
 })
 //we are now entering a query parameter in the api request
 // /:name is the query param
-app.get('/api/:name', (req,res)=>{
+app.get('/https://render-express-deployment-pqwl.onrender.com/api/:name', (req,res)=>{
     //we are responding with JSON
     const rapperName = req.params.name.toLowerCase()
     if(rappers[rapperName]){
