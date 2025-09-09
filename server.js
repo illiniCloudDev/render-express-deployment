@@ -25,7 +25,7 @@ const rappers = {
     },
 }
 
-app.get('/https://render-express-deployment-pqwl.onrender.com/:name', (req,res)=>{
+app.get('/', (req,res)=>{
     //__dirname is starting where ever server.js is located first
     res.sendFile(__dirname + '/index.html')
     
@@ -33,7 +33,7 @@ app.get('/https://render-express-deployment-pqwl.onrender.com/:name', (req,res)=
 })
 //we are now entering a query parameter in the api request
 // /:name is the query param
-app.get('/https://render-express-deployment-pqwl.onrender.com/api/:name', (req,res)=>{
+app.get('/api/:name', (req,res)=>{
     //we are responding with JSON
     const rapperName = req.params.name.toLowerCase()
     if(rappers[rapperName]){
@@ -46,6 +46,6 @@ app.get('/https://render-express-deployment-pqwl.onrender.com/api/:name', (req,r
 })
 
 //this is our server actually listening for the request 
-app.listen(PORT, ()=>{
+app.listen( process.env.PORT || PORT, ()=>{
     console.log(`The server is running my boi. It is on port: ${PORT}. Congrats on the launch!`)
 })
